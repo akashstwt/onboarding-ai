@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+/* Helvetica Neue Font Family */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueThin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueUltraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueUltraLightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueLightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueRoman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueMediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueBoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueHeavyItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueBlack.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('/fonts/HelveticaNeueBlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HoeflerText';
+    src: url('/fonts/Hoefler-text-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Gradient Colors */
+  --gradient-start: #FFC31B;
+  --gradient-25: #C496BD;
+  --gradient-mid: #F66D82;
+  --gradient-75: #FD6240;
+  --gradient-end: #CB3D73;
+  
+  /* Gradient Definition */
+  --gradient-primary: linear-gradient(135deg, 
+    var(--gradient-start) 0%, 
+    var(--gradient-25) 25%, 
+    var(--gradient-mid) 50%, 
+    var(--gradient-75) 75%, 
+    var(--gradient-end) 100%
+  );
+}
+
+@theme {
+  
+  /* Primary Brand Colors */
+  --color-primary-border: #303030;
+  --color-primary-text: #B7B7B7;
+  
+  /* Background Colors */
+  --color-light-black: #171717;
+  --color-bg-yellow: #D4D9BB;
+  
+  /* Font Families */
+  --font-helvetica: 'HelveticaNeue';
+  --font-hoefler: 'HoeflerText';
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.7);
+}
+
+/* Custom scrollbar for specific components */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.5);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.7);
+}
+
+/* Animation delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Gradient Utilities */
+
+/* Gradient Background */
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+/* Gradient Text */
+.text-gradient-primary {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient Border */
+.border-gradient-primary {
+  border: 2px solid transparent;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) padding-box,
+              var(--gradient-primary) border-box;
+}
+
+/* Gradient Icon (for SVG stroke) */
+.icon-gradient-primary svg {
+  stroke: url(#icon-gradient);
+}
+
+/* SVG Gradient Definition (Global) */
+.svg-gradient-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
